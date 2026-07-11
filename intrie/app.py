@@ -6,7 +6,7 @@ import streamlit as st
 
 from components.sidebar import render_sidebar
 from config.settings import get_settings
-from pages import (
+from views import (
     dashboard,
     feedback,
     recommendations,
@@ -46,9 +46,6 @@ def main() -> None:
         layout="wide",
         initial_sidebar_state="expanded",
     )
-
-    # Hide Streamlit's automatic navigation generated from the pages/ folder.
-    st.set_option("client.showSidebarNavigation", False)
 
     load_css(settings.stylesheet_path)
     initialize_session_state()

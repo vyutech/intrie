@@ -1,1 +1,0 @@
-Estimate the candidate's hiring confidence using resume-job match, technical performance, communication clarity, and visible skill gaps. Explain what moves the score most.

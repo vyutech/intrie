@@ -25,8 +25,6 @@ def main() -> None:
     load_css(settings.stylesheet_path)
     initialize_session_state()
 
-    selected_page = render_sidebar(list(PAGE_REGISTRY))
-    PAGE_REGISTRY[selected_page]()
 
 
 if __name__ == "__main__":

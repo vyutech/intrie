@@ -6,15 +6,6 @@ import streamlit as st
 
 from components.sidebar import render_sidebar
 from config.settings import get_settings
-from pages import (
-    dashboard,
-    feedback,
-    recommendations,
-    resume_setup,
-    roadmap,
-    round1_skill_assessment,
-    round2_technical_interview,
-)
 from utils.session_manager import initialize_session_state
 
 

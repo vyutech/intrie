@@ -7,19 +7,6 @@ import streamlit as st
 from components.sidebar import render_sidebar
 from config.settings import get_settings
 from utils.session_manager import initialize_session_state
-
-
-PAGE_REGISTRY = {
-    "Dashboard": dashboard.render,
-    "Resume & Job Setup": resume_setup.render,
-    "Round 1: Skill Assessment": round1_skill_assessment.render,
-    "Round 2: Technical Interview": round2_technical_interview.render,
-    "Feedback & Scores": feedback.render,
-    "Roadmap": roadmap.render,
-    "Recommended Companies": recommendations.render,
-}
-
-
 def load_css(stylesheet: Path) -> None:
     """Inject local stylesheet into the Streamlit app."""
     if stylesheet.exists():
